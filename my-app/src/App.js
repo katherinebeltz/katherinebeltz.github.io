@@ -3,8 +3,7 @@ import "./App.css";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Navigate,
+  Route
 } from "react-router-dom";
   
 // import Home component
@@ -27,7 +26,7 @@ function App() {
           {/* This route is for about component 
           with exact path "/about", in component 
           props we passes the imported component*/}
-          <Route path="/about" element={<Company />} />
+          <Route path="/company" element={<Company />} />
             
             
           
