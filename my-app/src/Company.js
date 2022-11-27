@@ -16,8 +16,8 @@ function Company() {
 
     const sources = [["https://www.cnn.com/2012/07/16/tech/web/marissa-mayer-bio#:~:text=New%20Yahoo%20CEO%20Marissa%20Mayer,and%20most%20visible%20public%20faces.",'https://about.google/belonging/diversity-annual-report/2022/','https://www.statista.com/statistics/311805/google-employee-gender-department-global/']]
 
-    const list_src = sources.map((source) =>
-    <p>{source}</p>)
+    const list_src = sources.map((source, index) =>
+    <p key={index}>{source}</p>)
 
     return (
 <div>
