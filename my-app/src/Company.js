@@ -20,10 +20,11 @@ function Company() {
 
     const learn = ["https://about.google/belonging/diversity-annual-report/2022/","https://www.apple.com/diversity/" ]
 
-    const list_src = sources.map((source, index) =>
-    <Link key={index}>{source}</Link>)
+    const list_src = sources[id].map((source, index) =>
+    <a className="source" key={index} href={source} >{source}</a>)
 
-    const space = " "
+    
+
 
     return (
 <div className="container">
@@ -33,9 +34,9 @@ function Company() {
     <div className="percents">
     <h2 className="percent"> <h2 className="per">{percent_F_tech[id]}%</h2>of tech roles are taken by women.</h2>
     <h2 className="percent"><h2 className="per">{percent_F_lead[id]}%</h2> of leadership roles are taken by women.</h2>
-    </div>
-    <h2> Sources: {list_src} </h2>
-    <div><h2>Learn more:</h2> <Link>{learn[id]}</Link> </div>
+    </div>  
+    <div className="learn"><h2>Read more from the company</h2> <a className="link" href={learn[id]}>{learn[id]}</a> </div>
+    <h2 className="sources"> <div>Sources</div> {list_src} </h2>
 </div>
     )
 }
