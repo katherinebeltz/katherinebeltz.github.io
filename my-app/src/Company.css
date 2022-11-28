@@ -18,3 +18,25 @@
     padding-top: 15px;
     padding-bottom: 10px;
 }
+
+.intro {
+    font-size: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 500px;
+    padding: 75px;
+    border-radius: 25px;
+    font-size: 35px;
+    background-color: rgba(239, 233, 237, 0.423);
+}
+
+.big {
+    font-size: 50px;
+}

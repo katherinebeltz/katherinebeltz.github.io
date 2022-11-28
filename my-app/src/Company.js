@@ -23,10 +23,13 @@ function Company() {
     const list_src = sources.map((source, index) =>
     <Link key={index}>{source}</Link>)
 
+    const space = " "
+
     return (
 <div className="container">
     <h1 className="title">{names[id]}</h1>
-    <h2>First female engineer at {names[id]} was {first_name[id]} and she started in {first_year[id]}.</h2>
+    <h1 className="intro">Here are some facts about {names[id]}.</h1>
+    <h2 className="line">The first female engineer at&nbsp;<div> {names[id]} </div> &nbsp;was&nbsp;<div className="big">{first_name[id]}, </div> &nbsp;and she started in <div className="big">&nbsp;{first_year[id]}</div>.</h2>
     <h2>Percent of tech roles taken by women: {percent_F_tech[id]}</h2>
     <h2>Percent of leadership roles taken by women: {percent_F_lead[id]}</h2>
     <h2> Sources: {list_src} </h2>
