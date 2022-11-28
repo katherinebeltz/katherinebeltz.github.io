@@ -30,8 +30,10 @@ function Company() {
     <h1 className="title">{names[id]}</h1>
     <h1 className="intro">Here are some facts about {names[id]}.</h1>
     <h2 className="line">The first female engineer at&nbsp;<div> {names[id]} </div> &nbsp;was&nbsp;<div className="big">{first_name[id]}, </div> &nbsp;and she started in <div className="big">&nbsp;{first_year[id]}</div>.</h2>
-    <h2>Percent of tech roles taken by women: {percent_F_tech[id]}</h2>
-    <h2>Percent of leadership roles taken by women: {percent_F_lead[id]}</h2>
+    <div className="percents">
+    <h2 className="percent"> <h2 className="per">{percent_F_tech[id]}%</h2>of tech roles are taken by women.</h2>
+    <h2 className="percent"><h2 className="per">{percent_F_lead[id]}%</h2> of leadership roles are taken by women.</h2>
+    </div>
     <h2> Sources: {list_src} </h2>
     <div><h2>Learn more:</h2> <Link>{learn[id]}</Link> </div>
 </div>
