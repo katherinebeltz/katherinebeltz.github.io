@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function Home() {
     const navigate = useNavigate()
 
-    const companies = ["Google"]
+    const companies = ["Google", "Apple"]
 
     const buttons = companies.map((company, index) => {
         const routeChange = () => {
