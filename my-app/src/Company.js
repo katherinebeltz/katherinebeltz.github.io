@@ -25,7 +25,7 @@ function Company() {
 
     return (
 <div className="container">
-    <h1>{names[id]}</h1>
+    <h1 className="title">{names[id]}</h1>
     <h2>First female engineer at {names[id]} was {first_name[id]} and she started in {first_year[id]}.</h2>
     <h2>Percent of tech roles taken by women: {percent_F_tech[id]}</h2>
     <h2>Percent of leadership roles taken by women: {percent_F_lead[id]}</h2>
