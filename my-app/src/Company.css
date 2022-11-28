@@ -9,9 +9,12 @@
 .title {
     position: sticky;
     top: 0px;
-    border-color: red;
+    background-color: white;
+    opacity: 70%;
     width: 100%;
-    margin-left: 50px;
+    padding-left: 50px;
     z-index: 100;
-
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
