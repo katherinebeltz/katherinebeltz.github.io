@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Home.css';
 
 
 function Home() {
@@ -13,13 +14,14 @@ function Home() {
         }
         return(
         <div key={index}>
-        <button onClick={routeChange}>{company}</button>
+        <button className="button" onClick={routeChange}>{company}</button>
         </div>)
 })
     return (
-<div>
-    <h1>Home page</h1>
-        <h2>{buttons}</h2>
+<div className="container">
+    <h1>Welcome to my Digital Feminism Project!</h1>
+    <h2>Click a company to learn more about their inclusion of women</h2>
+        <div className="buttons" >{buttons}</div>
 </div>
     )
 }
