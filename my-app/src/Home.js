@@ -6,7 +6,7 @@ import './Home.css';
 function Home() {
     const navigate = useNavigate()
 
-    const companies = ["Google", "Apple"]
+    const companies = ["Google", "Apple", "Meta"]
 
     const buttons = companies.map((company, index) => {
         const routeChange = () => {
