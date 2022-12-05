@@ -20,7 +20,7 @@ function Home() {
     return (
 <div className="container">
     <h1>Welcome to my Digital Feminism Project!</h1>
-    <h2>Click a company to learn more about their inclusion of women</h2>
+    <h2>Click a company to learn more about their inclusion of women and minorities in tech.</h2>
         <div className="buttons" >{buttons}</div>
 </div>
     )
