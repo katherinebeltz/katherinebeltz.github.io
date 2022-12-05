@@ -55,7 +55,7 @@
 }
 
 .big {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .percents {
@@ -63,12 +63,12 @@
 }
 
 .percent {
-    width: 400px;
+    width: 230px;
     margin: 50px;
     padding: 75px;
     border-radius: 25px;
     background-color: rgba(239, 233, 237, 0.423);
-    font-size: 35px;
+    font-size: 25px;
     justify-content: center;
     text-align: center;
 }
